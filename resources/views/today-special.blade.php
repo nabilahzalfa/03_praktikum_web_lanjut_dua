@@ -27,60 +27,72 @@
             </div>
             <div class="col-lg-12 tm-popular-items-container">
             <div class="tm-popular-item">
-                <img src="{{ asset('asset/img/salted-caramel.jpg') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                <img src="{{$menu_salted->gambar}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
-                    <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">s</span>alted caramel mocha</h3><hr class="tm-popular-item-hr">
-                    <p>Mocha nikmat dengan Salted Caramel yang gurih</p>
+                    <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_salted->nama}}</h3><hr class="tm-popular-item-hr">
+                    <p>{{$menu_salted->deskripsi}}</p>
+                    <br>
+                    <p>Stok: {{$menu_salted->stok}}</p>
                 <div class="order-now-container">
                     <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
                 </div>              
             </div>
             <div class="tm-popular-item">
-                <img src="{{ asset('asset/img/Pavlova-1.jpg') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                <img src="{{$menu_pavlova->gambar}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">b</span>erry pavlova</h3><hr class="tm-popular-item-hr">
-                <p>Crunchy diluar dan lembut di dalam dengan manisnya berry</p>
+                <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_pavlova->nama}}</h3><hr class="tm-popular-item-hr">
+                <p>{{$menu_pavlova->deskripsi}}</p>
+                <br>
+                <p>Stok: {{$menu_pavlova->stok}}</p>
                 <div class="order-now-container">
                     <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
                 </div>              
             </div>
             <div class="tm-popular-item">
-                <img src="{{ asset('asset/img/almond-croissant-1.png') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                <img src="{{$menu_croissant->gambar}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">a</span>lmond croissant</h3><hr class="tm-popular-item-hr">
-                <p>Croissant lembut dan berlayer dengan Crunchy Almond di luar</p>
+                <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_croissant->nama}}</h3><hr class="tm-popular-item-hr">
+                <p>{{$menu_croissant->deskripsi}}</p>
+                <br>
+                <p>Stok: {{$menu_croissant->stok}}</p>
                 <div class="order-now-container">
                     <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
                 </div>              
             </div>
             <div class="tm-popular-item">
-                <img src="{{ asset('asset/img/prawn-aglio-1.png') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                <img src="{{$menu_aglio->gambar}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">p</span>rwan aglio e olio</h3><hr class="tm-popular-item-hr">
-                <p>Spagetti gurih dengan tambahan udang yang kenyal</p>
+                <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_aglio->nama}}</h3><hr class="tm-popular-item-hr">
+                <p>{{$menu_aglio->deskripsi}}</p>
+                <br>
+                <p>Stok: {{$menu_aglio->stok}}</p>
                 <div class="order-now-container">
                     <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
                 </div>              
             </div>
             <div class="tm-popular-item">
-                <img src="{{ asset('asset/img/camomile-tea.jpg') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                <img src="{{$menu_chamomile->gambar}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
-                    <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">c</span>hamomile tea</h3><hr class="tm-popular-item-hr">
-                    <p>Teh herbal dari bunga chamomile yang berguna untuk mengatasi insomnia</p>
+                    <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_chamomile->nama}}</h3><hr class="tm-popular-item-hr">
+                    <p>{{$menu_chamomile->deskripsi}}</p>
+                    <br>
+                    <p>Stok: {{$menu_chamomile->stok}}</p>
                 <div class="order-now-container">
                     <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
                 </div>              
             </div>
             <div class="tm-popular-item">
-                <img src="{{ asset('asset/img/pea-tea-butterfly.jpg') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                <img src="{{$menu_pea->gambar}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
-                    <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">p</span>ea tea butterfly</h3><hr class="tm-popular-item-hr">
-                    <p>teh bunga telang yang dapat membuat suasana hati yang seimbang</p>
+                    <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_pea->nama}}</h3><hr class="tm-popular-item-hr">
+                    <p>{{$menu_pea->deskripsi}}</p>
+                    <br>
+                    <p>Stok: {{$menu_pea->stok}}</p>
                 <div class="order-now-container">
                     <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>

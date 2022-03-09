@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    </head>
-    <body>
-    <footer>
+<footer>
         <div class="tm-black-bg">
         <div class="container">
             <div class="row margin-bottom-60">
@@ -42,6 +37,4 @@
         </div>  
         </div>
     </div>
-    </footer> <!-- Footer content-->  
-    </body>
-</html>
+    </footer> <!-- Footer content-->

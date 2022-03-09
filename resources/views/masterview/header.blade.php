@@ -3,7 +3,7 @@
         <div class="row">
           <div class="tm-top-header-inner">
             <div class="tm-logo-container">
-              <img src="asset/img/logo.png" alt="Logo" class="tm-site-logo">
+              <img src="{{ asset('asset/img/logo.png') }}" alt="Logo" class="tm-site-logo">
               <h1 class="tm-site-name tm-handwriting-font">AADA Cafe</h1>
             </div>
             <div class="mobile-menu-icon">
@@ -11,10 +11,10 @@
             </div>
             <nav class="tm-nav">
               <ul>
-                <li><a href="/" class="{{ ($title == "AADA Cafe - Home" )? "active" : "" }}">Home</a></li>
-                <li><a href="/today-special" class="{{ ($title == "AADA Cafe - Today Special" )? "active" : "" }}">Today Special</a></li>
-                <li><a href="/menu" class="{{ ($title == "AADA Cafe - Menu" )? "active" : "" }}">Menu</a></li>
-                <li><a href="/contact" class="{{ ($title == "AADA Cafe - Contact" )? "active" : "" }}">Contact</a></li>
+                <li><a href="{{ url('/') }}" class="{{ ($title == "AADA Cafe - Home" )? "active" : "" }}">Home</a></li>
+                <li><a href="{{ url('/today-special') }}" class="{{ ($title == "AADA Cafe - Today Special" )? "active" : "" }}">Today Special</a></li>
+                <li><a href="{{ url('/menu') }}" class="{{ ($title == "AADA Cafe - Menu" )? "active" : "" }}">Menu</a></li>
+                <li><a href="{{ url('/contact') }}" class="{{ ($title == "AADA Cafe - Contact" )? "active" : "" }}">Contact</a></li>
               </ul>
             </nav>   
           </div>           

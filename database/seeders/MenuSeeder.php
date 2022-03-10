@@ -23,77 +23,88 @@ class MenuSeeder extends Seeder
                 'harga' => 13,
                 'deskripsi' => 
                 'Americano dibuat dari campuran espresso berkualitas yang diseduh dan ditambahkan dengan air',
-                'gambar' => 'asset/img/americano-1.jpg'
+                'gambar' => 'menu2.jpg',
+                'kategori' => 'minuman'
             ],[
                 'nama' => 'Cappuccino',
                 'stok' => 15,
                 'harga' => 20,
                 'deskripsi' => 
                 'Cappucino dibuat dari campuran espresso berkualitas dengan susu segar, dibuat dengan foam lembut',
-                'gambar' => 'asset/img/cappuccino-1.jpg'
+                'gambar' => 'menu3.jpg',
+                'katgeori' => 'minuman'
             ],[
                 'nama' => 'Mocha',
                 'stok' => 9,
                 'harga' => 23,
                 'deskripsi' => 
                 'Mocha dibuat dari campuran espresso berkualitas dengan coklat belgia dan susu segar',
-                'gambar' => 'asset/img/mocha-1.png'
+                'gambar' => 'menu1.png',
+                'katgeori' => 'minuman'
             ],[
                 'nama' => 'Salted caramel mocha',
                 'stok' => 5,
                 'harga' => 30,
                 'deskripsi' => 
                 'Mocha nikmat dengan Salted Caramel yang gurih',
-                'gambar' => 'asset/img/salted-caramel.jpg'
+                'gambar' => 'salted-caramel.jpg',
+                'katgeori' => 'minuman'
             ],[
                 'nama' => 'Berry pavlova',
                 'stok' => 5,
                 'harga' => 45,
                 'deskripsi' => 
                 'Crunchy diluar dan lembut di dalam dengan manisnya berry',
-                'gambar' => 'asset/img/Pavlova-1.jpg'
+                'gambar' => 'Pavlova-1.jpg',
+                'katgeori' => 'makanan'
             ],[
                 'nama' => 'Almond croissant',
                 'stok' => 12,
                 'harga' => 28,
                 'deskripsi' => 
                 'Croissant lembut dan berlayer dengan Crunchy Almond di luar',
-                'gambar' => 'asset/img/almond-croissant-1.png'
+                'gambar' => 'almond-croissant-1.png',
+                'katgeori' => 'makanan'
             ],[
-                'nama' => 'Prwan aglio e olio',
+                'nama' => 'Prawn aglio e olio',
                 'stok' => 4,
                 'harga' => 50,
                 'deskripsi' => 
                 'Spagetti gurih dengan tambahan udang yang kenyal',
-                'gambar' => 'asset/img/prawn-aglio-1.png'
+                'gambar' => 'prawn-aglio-1.png',
+                'katgeori' => 'makanan'
             ],[
                 'nama' => 'Chamomile tea',
                 'stok' => 8,
                 'harga' => 17,
                 'deskripsi' => 
                 'Teh herbal dari bunga chamomile yang berguna untuk mengatasi insomnia',
-                'gambar' => 'asset/img/camomile-tea.jpg'
+                'gambar' => 'camomile-tea.jpg',
+                'katgeori' => 'minuman'
             ],[
                 'nama' => 'Pea tea butterfly',
                 'stok' => 10,
                 'harga' => 19,
                 'deskripsi' => 
                 'Teh bunga telang yang dapat membuat suasana hati yang seimbang',
-                'gambar' => 'asset/img/pea-tea-butterfly.jpg'
+                'gambar' => 'pea-tea-butterfly.jpg',
+                'katgeori' => 'minuman'
             ],[
                 'nama' => 'Blended coffe',
                 'stok' => 18,
                 'harga' => 25,
                 'deskripsi' => 
                 'Blend coffee adalah kopi yang terdiri dari beberapa campuran jenis kopi, baik kopi arabika maupun kopi robusta',
-                'gambar' => 'asset/img/menu4.jpg'
+                'gambar' => 'menu4.jpg',
+                'katgeori' => 'minuman'
             ],[
                 'nama' => 'Blended Cream',
                 'stok' => 18,
                 'harga' => 25,
                 'deskripsi' => 
                 'Blend Cream adalah minuman coklat Belgia dengan susu segar, serta cream lembut di atasnya',
-                'gambar' => 'asset/img/menu5.jpg'
+                'gambar' => 'menu5.jpg',
+                'katgeori' => 'minuman'
             ]
         ]);
     }

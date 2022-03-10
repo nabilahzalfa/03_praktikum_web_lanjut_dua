@@ -1,8 +1,9 @@
 @extends('masterview.content')
 
 @section('content')
-
 <section class="tm-welcome-section">
+  <!-- {{-- Mengecek apakah DB sudah masuk --}}
+  {{-- @dd($all_menu) --}} -->
     <div class="container tm-position-relative">
       <div class="tm-lights-container">
         <img src="{{ asset('asset/img/light.png') }}" alt="Light" class="light light-1">
@@ -12,8 +13,7 @@
       <div class="row tm-welcome-content">
         <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="{{ asset('asset/img/header-line.png') }}" alt="Line" class="tm-header-line">&nbsp;Our Menus&nbsp;&nbsp;<img src="{{ asset('asset/img/header-line.png') }}" alt="Line" class="tm-header-line"></h2>
         <h2 class="gold-text tm-welcome-header-2">Aada Cafe</h2>
-        <p class="white-text tm-welcome-description">AADA Cafe menyediakan menu <span class="gold-text">berkualitas</span> serta rasa yang <span class="gold-text">nikmat</span>. Dibuat dari tangan chef internasional yang dimiliki oleh AADA Cafe, membuat cita rasa dari setiap hidangan 
-        tidak perlu diragukan lagi. Bahan yang langsung di datangkan dari negara asal, sehingga memiliki rasa yang autentik.</p>
+        <p class="white-text tm-welcome-description"><span class="gold-text"> Aada Cafe </span> menyediakan menu <span class="gold-text"> berkualitas</span> serta rasa yang nikmat. Dibuat dari tangan chef internasional yang dimiliki oleh AADA Cafe, membuat cita rasa dari setiap hidangan tidak perlu diragukan lagi. Bahan yang langsung di datangkan dari negara asal, sehingga memiliki rasa yang autentik.</p>
         <a href="#main" class="tm-more-button tm-more-button-welcome">Read More</a>      
       </div>
       <img src="{{ asset('asset/img/table-set.png') }}" alt="Table Set" class="tm-table-set img-responsive">  
@@ -25,7 +25,7 @@
         <div class="col-lg-9 col-md-9 col-sm-8">
           <h2 class="tm-section-header gold-text tm-handwriting-font">Variety of Menus</h2>
           <h2>AADA Cafe</h2>
-          <p class="tm-welcome-description">AADA Cafe mampu meyakinkan konsumen bahwa AADA Cafe adalah cafe
+          <p class="tm-welcome-description"><span class="blue-text"> AADA Cafe </span> mampu meyakinkan konsumen bahwa AADA Cafe adalah cafe
             yang mempunyai kualitas produk baik dari layanan maupun menu utamanya sendiri
             yaitu kopi dari pada pesaing yang lain. AADA Cafe sekarang berkembang dengan
             pesat baik dari segi interior, tempat, lokasi maupun fasilitas, berikut gambar
@@ -47,17 +47,25 @@
 @include('masterview.sidebar')
 
 <div class="tm-menu-product-content col-lg-9 col-md-9"> <!-- menu content -->
+  <div class="jenis-menu">
+    <a class="btn-primary" href="{{ route('minuman') }}">Minuman</a>
+    <a class="btn-primary" href="{{ route('makanan') }}">Makanan</a>
+  </div>
+    @foreach ($all_menu as $objek)
     <div class="tm-product">
-      <img src="{{ asset('asset/img/menu1.png') }}" alt="Product" >
+      <img src="{{ asset('asset/img/'.$objek->gambar) }}" alt="Product" width="136px">
       <div class="tm-product-text">
-        <h3 class="tm-product-title">Caffé Mocha</h3>
-        <p class="tm-product-description">Mocha dibuat dari campuran espresso berkualitas dengan coklat belgia dan susu segar</p>
+        <h3 class="tm-product-title">{{ $objek->nama }}</h3>
+        <p class="tm-product-description">{{ $objek->deskripsi }} </p>
+        <br><strong>Stok : {{ $objek->stok }}</strong>
+        
       </div>
       <div class="tm-product-price">
-        <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">$</span>30</a>
+        <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">$</span>{{ $objek->harga }}</a>
       </div>
     </div>
-    <div class="tm-product">
+    @endforeach
+   <!-- <div class="tm-product">
       <img src="{{ asset('asset/img/menu2.jpg') }}" alt="Product">
       <div class="tm-product-text">
         <h3 class="tm-product-title">Americano</h3>
@@ -67,7 +75,7 @@
         <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">$</span>20</a>
       </div>
     </div>
-    <div class="tm-product">
+     <div class="tm-product">
       <img src="{{ asset('asset/img/menu3.jpg') }}" alt="Product">
       <div class="tm-product-text">
         <h3 class="tm-product-title">Cappucino</h3>
@@ -88,6 +96,7 @@
       </div>
     </div>
     <div class="tm-product">
+      
       <img src="{{ asset('asset/img/menu5.jpg') }}" alt="Product">
       <div class="tm-product-text">
         <h3 class="tm-product-title">Blended Cream</h3>
@@ -96,11 +105,10 @@
       <div class="tm-product-price">
         <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">$</span>45</a>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>          
 </section>
 </div>
-</div> 
-
+</div>
 @endsection

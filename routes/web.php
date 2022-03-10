@@ -24,7 +24,8 @@ route::get('/', [IndexController::class, 'index']);
 route::get('/today-special', [TodaySpecialController::class, 'todaySpecial']);
 
 // Halaman Menu
-route::get('/menu', [MenuController::class, 'menu']);
+    route::get('/minuman', [MenuController::class, 'menu'])->name('minuman');
+    route::get('/makanan', [MenuController::class, 'menuMakan'])->name('makanan');
 
 // Halaman Contact
 route::get('/contact', [ContactController::class, 'contact']);

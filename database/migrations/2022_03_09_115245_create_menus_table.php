@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('harga');
             $table->text('deskripsi');
             $table->string('gambar', 100);
+            $table->string('kategori', 50);
             $table->timestamps();
         });
     }

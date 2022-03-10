@@ -11,10 +11,10 @@
             </div>
             <nav class="tm-nav">
               <ul>
-                <li><a href="{{ url('/') }}" class="{{ ($title == "AADA Cafe - Home" )? "active" : "" }}">Home</a></li>
-                <li><a href="{{ url('/today-special') }}" class="{{ ($title == "AADA Cafe - Today Special" )? "active" : "" }}">Today Special</a></li>
-                <li><a href="{{ url('/menu') }}" class="{{ ($title == "AADA Cafe - Menu" )? "active" : "" }}">Menu</a></li>
-                <li><a href="{{ url('/contact') }}" class="{{ ($title == "AADA Cafe - Contact" )? "active" : "" }}">Contact</a></li>
+                <li><a href="{{ url('/') }}" class="{{ ($title == 'AADA Cafe - Home' )? 'active' : ''}}">Home</a></li>
+                <li><a href="{{ url('/today-special') }}" class="{{ ($title == 'AADA Cafe - Today Special' )? 'active' : '' }}">Today Special</a></li>
+                <li><a href="{{ url('/minuman') }}" class="{{ ($title == 'AADA Cafe - Menu' )? 'active' : '' }}">Menu</a></li>
+                <li><a href="{{ url('/contact') }}" class="{{ ($title == 'AADA Cafe - Contact' )? 'active' : '' }}">Contact</a></li>
               </ul>
             </nav>   
           </div>           
